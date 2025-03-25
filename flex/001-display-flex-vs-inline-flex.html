@@ -1,0 +1,49 @@
+<!--
+    (1) display: flex  VS  (2) display: inline-flex
+
+    Both convert the container into a flex container.
+
+    Differences:
+        In (1) the container is a block-level element. Any adjacent element is positioned below it.
+
+        In (2) the container is an inline-level element. Adjacent inline elements are positioned next to it if there's space.
+
+        Think of display: block  VS  display: inline but without the flex part.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>001</title>
+        <link rel="stylesheet" href="001.css">
+    </head>
+    <body>
+        <div id="container-a">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+            <div class="child">6</div>
+            <div class="child">7</div>
+            <div class="child">8</div>
+        </div>
+
+        <span>This is not adjacent to container-a.</span>
+
+        <div id="container-b">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+            <div class="child">6</div>
+            <div class="child">7</div>
+            <div class="child">8</div>
+        </div>
+
+        <span>This IS adjacent to container-b.</span>
+        
+    </body>
+</html>
